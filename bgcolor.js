@@ -16,9 +16,9 @@ const item1 = document.createElement("li");
 const item2 = document.createElement("li");
 const item3 = document.createElement("li");
 
-item1.textContent = "web-115";
-item2.textContent = "4th period";
-item3.textContent = "teacher: mr. justice";
+item1.textContent = "Mr. Justice is the best teacher";
+item2.textContent = "Jiya";
+item3.textContent = "Pink
 
 list.appendChild(item1);
 list.appendChild(item2);
@@ -30,7 +30,7 @@ function getRandomColor() {
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
     return `rgb(${r}, ${g}, ${b})`;
-} //this function I had to look up online, I didn't know how to generate random colors
+} // I didn't know how to generate random colors so I looked it up. 
 
 myBtn.addEventListener("click", function() {
     const newItem = document.createElement("li");
@@ -44,3 +44,4 @@ myDiv.addEventListener("click", function() {
     const randomColor = getRandomColor();      
     heading.style.backgroundColor = randomColor;
 });
+
